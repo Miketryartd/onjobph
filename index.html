@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnJob</title>
+    <meta name="og:url" content="https://onjobph.vercel.app" />
+    <meta name="og:title" content="OnJob" />
+    <meta
+      name="og:description"
+      content="Onjob is a platform that offers a wide range of online job opportunities.
+          You can find jobs that suit your skills and interests!"
+    />
+    <meta name="og:image" content="https://onjobph.vercel.app/og-img.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400&family=Rethink+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
+      defer
+    ></script>
+    <style>
+      body {
+        /* overflow-y: hidden; */
+        font-family: "Rethink Sans", system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+          "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      .loading::after {
+        display: inline-block;
+        animation: dotty steps(1, end) 2s infinite;
+        content: "";
+      }
+
+      @keyframes dotty {
+        0% {
+          content: "";
+        }
+        25% {
+          content: ".";
+        }
+        50% {
+          content: "..";
+        }
+        75% {
+          content: "...";
+        }
+        100% {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div
+        style="background-image: url(./hero-img.webp)"
+        class="bg-no-repeat bg-cover"
+      >
+        <header
+          class="backdrop-blur-md bg-black/20 py-2 px-4 flex items-center justify-between"
+        >
+          <a href="#" class="flex p-2 space-x-2 rounded-md">
+            <box-icon name="briefcase" class="fill-white"></box-icon>
+            <span class="font-bold font-['Kalnia'] text-white">OnJob</span>
+          </a>
+
+          <div class="space-x-4">
+            <a
+              href="#"
+              class="font-semibold px-4 py-2 bg-black text-white rounded-full"
+              >Find a Job</a
+            >
+          </div>
+        </header>
+        <div class="py-20 px-4">
+          <h1
+            class="[text-shadow:0_10px_20px_rgba(0,0,0,0.7)] text-4xl text-center text-white font-['Kalnia']"
+          >
+            Find a perfect online job for you.
+          </h1>
+
+          <button
+            class="px-6 py-4 mt-8 font-semibold rounded-full mx-auto w-max block bg-black text-lg text-white"
+          >
+            Get started
+          </button>
+        </div>
+        <div
+          class="z-50 fixed flex items-center justify-center inset-0 bg-black/40"
+        >
+          <div
+            class="w-64 bg-zinc-950/60 backdrop-blur-md text-white p-4 pb-0 flex flex-col items-center justify-center rounded-2xl"
+          >
+            <img
+              src="./loading.png"
+              alt="Loading"
+              class="animate-spin w-14 mx-auto my-6 h-14"
+            />
+            <div class="loading text-center font-medium">
+              <span class="mr-1"
+                >Finding a perfect job for you, please wait</span
+              >
+            </div>
+            <button
+              onclick="window.close()"
+              class="font-bold w-full py-2 bg-white/10 text-white my-4 rounded-xl"
+            >
+              Got it
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <p class="mb-2 text-zinc-800 font-['Kalnia'] text-lg font-semibold mb">
+          OnJob
+        </p>
+        <p class="text-lg text-zinc-600">
+          Is a platform that offers a wide range of online job opportunities.
+          You can find jobs that suit your skills and interests!
+        </p>
+
+        <p
+          class="mb-2 text-zinc-800 font-['Kalnia'] text-lg font-semibold mt-6 mb"
+        >
+          Online jobs available:
+        </p>
+
+        <div class="space-y-2">
+          <div class="border p-4 rounded-xl">
+            <p class="font-medium text-lg text-zinc-800">
+              Social Media Chat Assistant
+            </p>
+            <div class="flex gap-2 items-center">
+              <span
+                class="bg-zinc-100 text-zinc-600 font-medium px-2 rounded-md text-sm block w-max"
+                >Full-time</span
+              >
+              <span
+                class="bg-zinc-100 text-zinc-600 font-medium px-2 rounded-md text-sm block w-max"
+                >$25-$35 an hour</span
+              >
+            </div>
+            <div class="flex items-center mt-2 space-x-2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmd4Xn2tx1oJ98HSAfmgDEA4b0CK2ewf4v-iixdLA&s"
+                alt="HireSociall"
+                class="w-7 h-7 border border-black/10 rounded-md"
+              />
+              <span class="text-zinc-600 text-sm">HireSociall</span>
+            </div>
+          </div>
+
+          <div class="border p-4 rounded-xl">
+            <p class="font-medium text-lg text-zinc-800">Technical Associate</p>
+            <div class="flex gap-2 items-center">
+              <span
+                class="bg-zinc-100 text-zinc-600 font-medium px-2 rounded-md text-sm block w-max"
+                >Full-time</span
+              >
+            </div>
+            <div class="flex items-center mt-2 space-x-2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9tD_jIoJXR-63h7z_5_-3uNKhfD9yshiC6QCD&s=0"
+                alt="HireSociall"
+                class="w-7 h-7 border border-black/10 rounded-md"
+              />
+              <span class="text-zinc-600 text-sm"
+                >Sun Life of Canada (Philippines), Inc. Philippines</span
+              >
+            </div>
+          </div>
+
+          <div class="border p-4 rounded-xl">
+            <p class="font-medium text-lg text-zinc-800">
+              Customer Service Representative w/Healthcare CCE Exp
+            </p>
+            <div class="flex gap-2 items-center">
+              <span
+                class="bg-zinc-100 text-zinc-600 font-medium px-2 rounded-md text-sm block w-max"
+                >Full-time</span
+              >
+              <span
+                class="bg-zinc-100 text-zinc-600 font-medium px-2 rounded-md text-sm block w-max"
+                >₱30K-₱35K a month</span
+              >
+            </div>
+            <div class="flex items-center mt-2 space-x-2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQArIexAUsILTx4ZPDxp3hjDIvhCbjRYXvLGrcMiwg&s"
+                alt="HireSociall"
+                class="w-7 h-7 border border-black/10 rounded-md"
+              />
+              <span class="text-zinc-600 text-sm">Neksjob Philippines</span>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="border p-4 rounded-xl">
+              <p class="font-medium text-lg text-zinc-800">
+                Online English Teacher
+              </p>
+              <span
+                class="bg-zinc-100 text-zinc-600 font-medium px-2 rounded-md text-sm block w-max"
+                >Contractor</span
+              >
+              <div class="flex items-center mt-2 space-x-2">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQArIexAUsILTx4ZPDxp3hjDIvhCbjRYXvLGrcMiwg&s"
+                  alt="HireSociall"
+                  class="w-7 h-7 border border-black/10 rounded-md"
+                />
+                <span class="text-zinc-600 text-sm"> Native Camp</span>
+              </div>
+            </div>
+
+            <div
+              class="flex items-end justify-center absolute inset-0 bg-gradient-to-b from-white/0 to-white"
+            >
+              <a
+                href="#"
+                class="font-semibold px-4 py-1.5 bg-black text-white rounded-full"
+                >See more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="mt-10 bg-black pt-2 pb-20">
+        <div class="px-4">
+          <div class="flex justify-between items-center">
+            <a href="#" class="flex p-2 space-x-2 rounded-md">
+              <box-icon name="briefcase" class="fill-white"></box-icon>
+              <span class="font-bold font-['Kalnia'] text-white">OnJob</span>
+            </a>
+
+            <a
+              href="#"
+              class="font-semibold px-4 py-1.5 bg-white text-black rounded-full"
+              >Find a Job</a
+            >
+          </div>
+          <p class="ml-10">
+            <span class="text-sm text-white"
+              >&copy; OnJob 2023 <br />
+              All rights reserved.
+            </span>
+          </p>
+          <hr class="border-white/20 my-4" />
+          <div class="flex gap-10">
+            <div class="ml-10 text-white text-sm flex flex-col gap-2">
+              <a href="#">About <span class="font-['Kalnia']">OnJob</span></a>
+              <a href="#">Contact Us</a>
+              <a href="#">Available jobs</a>
+            </div>
+            <div class="ml-10 text-white text-sm flex flex-col gap-2">
+              <a href="#">Need help?</a>
+              <a href="#">How does it work?</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+
+  <script src="ip.js"></script>
+  </body>
+</html>
